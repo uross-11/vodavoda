@@ -15,37 +15,34 @@ html{
 }
 
 * {
+    font-size: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
 body{
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
 }
-.nav-box {
-  height: 100px;
-}
+
+
+/* Navigacija --------------- */
 nav{
+  position: fixed;
+  top: 0;
   padding: 25px;
   height: 100px;
   width: 100%;
-  background-color: white;
-  z-index: 999;
-  box-shadow: 0px 10px 10px 0 rgba(0,0,0,0.25);
-  position: fixed;
+  background-color: hsl(0, 0%, 100%);
+  z-index: 1;
+  box-shadow: 0px 10px 10px 0 hsla(0, 0%, 0%, 0.25);
 }
 
-.omotac{
-  margin: 0 auto;
-  width: 1350px;
-}
-
-/*Navigaotri pocetak*/
-nav p{
+#logo{
   float: left;
   font-family: 'Code Pro Bold';
-  color: #00baf2;
+  text-decoration: none;
+  color: hsl(194, 100%, 47%);
   font-size: 40px;
   text-align: center;
 }
@@ -76,24 +73,22 @@ nav ul{
   text-decoration: none;
   font-size: 18px;
   font-weight: normal;
-  color: black;
+  color: hsl(0, 0%, 0%);
   transition: 0.4s;
 }
 
 .meniopc li a:hover{
-  color: #00baf2;
+  color: hsl(194, 100%, 47%);
   transition: 0.4s;
 }
 
 .meniopc li a:last-child{
   margin-right: 25px;
 }
+/* Navigacija --------------- */
 
 
-/*Navigaotri kraj*/
-
-
-/*Socijalni mediji pocetak*/
+/* Socijalni mediji --------------- */
 .social{
   display: inline-flex;
   margin-top: -6px;
@@ -109,9 +104,9 @@ nav ul{
   display: block;
   height: 40px;
   width: 40px;
-  background: #fff;
+  background: hsl(0, 0%, 100%);
   border-radius: 50%;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 10px hsla(0, 0%, 0%, 0.1);
   transition: 0.6s;
 }
 
@@ -125,56 +120,51 @@ a{
 }
 
 .social .icon:hover span{
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   transition: 0.6s;
 }
 .social .facebook:hover span{
-  background: #3B5999;
+  background: hsl(221, 44%, 42%);
   transition: 0.6s;
 }
 .social .instagram:hover span{
-  background: #e1306c;
+  background: hsl(340, 75%, 54%);
   transition: 0.6s;
 }
 .social .youtube:hover span{
-  background: red;
+  background: hsl(0, 100%, 50%);
   transition: 0.6s;
 }
-/*Socijalni mediji pocetak*/
+/* Socijalni mediji --------------- */
 
 
-/*slajder pocetak*/
+/* Slajder --------------- */
 .slider {
-  position: relative;
-  overflow: hidden;
-  height: 89.6vh;
-  width: 100%;
-  margin-bottom: 70px;
+  margin-top: 100px;
+  /* overflow: hidden; */
 }
 
 .slide {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 89.6vh;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
+  height: calc(100vh - 100px);
+  visibility: hidden;
+  transition: visibility 1s ease-in-out;
 }
 
 .slide.current {
-  opacity: 1;
+  visibility: visible;
 }
 
 .slide .content {
-  position: absolute;
-  bottom: 70px;
-  left: -600px;
-  opacity: 0;
+  /* bottom: 70px;
+  left: -600px; */
+  visibility: visible;
   width: 600px;
   background-color: rgba(255, 255, 255, 0.8);
   color: #333;
-  padding: 35px;
+  /* padding: 35px; */
 }
 
 .slide .content h1 {
@@ -182,7 +172,7 @@ a{
 }
 
 .slide.current .content {
-  opacity: 1;
+  visibility: visible;
   transform: translateX(600px);
   transition: all 0.7s ease-in-out 0.3s;
 }
@@ -202,7 +192,7 @@ a{
 .buttons button {
   border: 2px solid #fff;
   background-color: transparent;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   cursor: pointer;
   padding: 13px 15px;
   border-radius: 50%;
@@ -211,13 +201,14 @@ a{
 }
 
 .buttons button:hover {
-  background-color: #00baf2;
-  color: #fff;
+  background-color: hsl(194, 100%, 47%);
+  color: hsl(0, 0%, 100%);
   transition: 0.6s;
 }
 
 .slide.current .content {
-  transform: translateY(-300px);
+  visibility: visible;
+  /* transform: translateY(-300px); */
 }
 
 .slide:first-child {
@@ -240,8 +231,9 @@ a{
   background: url(../slike/slajder-slike/peta.png) no-repeat
     center top/cover;
 } 
-/*slajder kraj*/
+/* Slajder --------------- */
 
+/* Glavni sadrzaj --------------- */
 .O-nama{
   box-sizing: border-box;
   margin-bottom: 100px;
@@ -249,7 +241,7 @@ a{
 
 section h1{
   font-size: 30px;
-  color: #00baf2;
+  color: hsl(194, 100%, 47%);
   text-align: center;
   font-family: 'Code Pro Bold';
   margin-bottom: 50px;
@@ -267,7 +259,7 @@ section h1{
 
 .levo-o-nama h2{
   font-family: 'Code Pro Bold';
-  color: #00baf2;
+  color: hsl(194, 100%, 47%);
 }
 
 .levo-o-nama h2{
@@ -290,7 +282,7 @@ section h1{
 
 .desno-o-nama h2{
   font-family: 'Code Pro Bold';
-  color: #00baf2;
+  color: hsl(194, 100%, 47%);
   margin-bottom: 20px;
   margin-top: 10px;
   text-align: center;
@@ -301,7 +293,7 @@ section h1{
 }
 
 .kartice{
-  background-color: #f6f9f8;
+  background-color: hsl(160, 20%, 97%);
   clear: both;
   padding-top: 100px;   
   
@@ -310,7 +302,7 @@ section h1{
 .kartice .omotac h2{
   text-align: center;
   font-family: 'Code Pro Bold';
-  color: #00baf2;
+  color: hsl(194, 100%, 47%);
   margin-bottom: 70px;
 }
 
@@ -336,17 +328,17 @@ section h1{
   position: relative;
   width: 300px;
   height: 420px;
-  background: #fff;
+  background: hsl(0, 0%, 100%);
   margin: 20px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 25px hsla(0, 0%, 0%, 0.2);
   transition: 0.5s;
 }
 
 .conteiner .kartica:hover{
-  background-color: #00baf2;
-  color: #fff;
+  background-color: hsl(194, 100%, 47%);
+  color: hsl(0, 0%, 100%);
   font-weight: bold;
 }
 
@@ -354,13 +346,13 @@ section h1{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #00baf2;
+  background: hsl(194, 100%, 47%);
   clip-path: circle(150px at center 0);
   text-align: center;
 }
 
 .conteiner .kartica .krug h3{
-  color: white;
+  color: hsl(0, 0%, 100%);
   font-size: 18px;
   padding: 40px 0;
 }
@@ -373,12 +365,11 @@ section h1{
 }
 
 .conteiner .kartica .content p{
-  color: #666;
+  color: hsl(0, 0%, 40%);
 }
 
-
 .conteiner .kartica:nth-child(1).krug{
-  background: #00baf2;
+  background: hsl(194, 100%, 47%);
 }
 
 .kontent p{
@@ -388,11 +379,13 @@ section h1{
   display: flex;
   justify-content: center;
 }
+/* Glavni sadrzaj --------------- */
 
+/* Footer */
 footer{
   height: 100%;
   clear: both;
-  background-color: #e8edec;
+  background-color: hsl(168, 12%, 92%);
   padding-top: 50px;
   padding-bottom: 15px;
 }
@@ -400,14 +393,14 @@ footer{
 footer p{
   text-align: center;
   font-family: 'Code Pro Bold';
-  color: #00baf2;
+  color: hsl(194, 100%, 47%);
   font-size: 35px;
   margin-bottom: 30px;
 }
 
 #fmal{
   font-family: 'Poppins';
-  color: #000;
+  color: hsl(0, 0%, 0%);
   font-size: 13px;
 }
 
@@ -427,5 +420,6 @@ footer .social span{
   justify-content: center; 
   font-family: "Poppins";
   font-size: 15px;
-  color: #000;
+  color: hsl(0, 0%, 0%);
 }
+/* Footer */
