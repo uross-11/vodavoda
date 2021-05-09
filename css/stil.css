@@ -1,0 +1,431 @@
+@font-face {
+  src: url('../fontovi/Code\ Pro\ Bold.otf');
+  font-family: 'Code Pro Bold';
+}
+@font-face {
+  src: url('../fontovi/Poppins-Regular.ttf');
+  font-family: 'Poppins';
+}
+@font-face {
+  src: url('../fontovi/Poppins-Bold.ttf');
+  font-family: 'Poppins Bold';
+}
+html{
+  overflow-y: scroll;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+  background-color: white;
+}
+.nav-box {
+  height: 100px;
+}
+nav{
+  padding: 25px;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  box-shadow: 0px 10px 10px 0 rgba(0,0,0,0.25);
+  position: fixed;
+}
+
+.omotac{
+  margin: 0 auto;
+  width: 1350px;
+}
+
+/*Navigaotri pocetak*/
+nav p{
+  float: left;
+  font-family: 'Code Pro Bold';
+  color: #00baf2;
+  font-size: 40px;
+  text-align: center;
+}
+
+.meni{
+  float: right;
+  margin-top: 10px;
+}
+nav ul{
+  list-style: none;
+}
+
+.meniopc{
+  float: left;
+}
+
+.meniopc li{
+  float: left;
+  margin-right: 20px;
+  font-family: 'Poppins';
+}
+
+.meniopc li button:hover{
+  background-position: 500% 100%;
+}
+
+.meniopc li a{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: normal;
+  color: black;
+  transition: 0.4s;
+}
+
+.meniopc li a:hover{
+  color: #00baf2;
+  transition: 0.4s;
+}
+
+.meniopc li a:last-child{
+  margin-right: 25px;
+}
+
+
+/*Navigaotri kraj*/
+
+
+/*Socijalni mediji pocetak*/
+.social{
+  display: inline-flex;
+  margin-top: -6px;
+}
+.social .icon{
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.social .icon span{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.6s;
+}
+
+a{
+  color: inherit;
+}
+
+.social .icon span i{
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.social .icon:hover span{
+  color: #fff;
+  transition: 0.6s;
+}
+.social .facebook:hover span{
+  background: #3B5999;
+  transition: 0.6s;
+}
+.social .instagram:hover span{
+  background: #e1306c;
+  transition: 0.6s;
+}
+.social .youtube:hover span{
+  background: red;
+  transition: 0.6s;
+}
+/*Socijalni mediji pocetak*/
+
+
+/*slajder pocetak*/
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 89.6vh;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 89.6vh;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+  transition: 0.6s;
+}
+
+.buttons button:hover {
+  background-color: #00baf2;
+  color: #fff;
+  transition: 0.6s;
+}
+
+.slide.current .content {
+  transform: translateY(-300px);
+}
+
+.slide:first-child {
+  background: url(../slike/slajder-slike/1.png) no-repeat
+    center top/cover;
+}
+.slide:nth-child(2) {
+  background: url(../slike/slajder-slike/2.png) no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url(../slike/slajder-slike/3.png) no-repeat
+    center top/cover;
+}
+.slide:nth-child(4) {
+  background: url(../slike/slajder-slike/4.png) no-repeat
+    center top/cover;
+}
+.slide:nth-child(5) {
+  background: url(../slike/slajder-slike/peta.png) no-repeat
+    center top/cover;
+} 
+/*slajder kraj*/
+
+.O-nama{
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+section h1{
+  font-size: 30px;
+  color: #00baf2;
+  text-align: center;
+  font-family: 'Code Pro Bold';
+  margin-bottom: 50px;
+}
+
+.levo-o-nama{
+  float: left;
+  text-align: left;
+  padding: 15px;
+  font-size: 18px;
+  font-family: 'Poppins';
+  width: 675px;
+  box-sizing: border-box;
+}
+
+.levo-o-nama h2{
+  font-family: 'Code Pro Bold';
+  color: #00baf2;
+}
+
+.levo-o-nama h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.poreklo iframe{
+  margin-top: 20px;
+}
+
+.desno-o-nama{
+  float: right;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Poppins';
+  width: 675px;
+  margin-bottom: 130px;
+}
+
+.desno-o-nama h2{
+  font-family: 'Code Pro Bold';
+  color: #00baf2;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.desno-o-nama ul{
+  margin: 15px 0 15px 18px;
+}
+
+.kartice{
+  background-color: #f6f9f8;
+  clear: both;
+  padding-top: 100px;   
+  
+}
+
+.kartice .omotac h2{
+  text-align: center;
+  font-family: 'Code Pro Bold';
+  color: #00baf2;
+  margin-bottom: 70px;
+}
+
+.kartice p{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Poppins';
+}
+
+.conteiner{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.conteiner h3{
+  font-family: 'Poppins';
+}
+
+.conteiner .kartica{
+  position: relative;
+  width: 300px;
+  height: 420px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.conteiner .kartica:hover{
+  background-color: #00baf2;
+  color: #fff;
+  font-weight: bold;
+}
+
+.conteiner .kartica .krug{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00baf2;
+  clip-path: circle(150px at center 0);
+  text-align: center;
+}
+
+.conteiner .kartica .krug h3{
+  color: white;
+  font-size: 18px;
+  padding: 40px 0;
+}
+
+.conteiner .kartica .content{
+  position:absolute;
+  bottom: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.conteiner .kartica .content p{
+  color: #666;
+}
+
+
+.conteiner .kartica:nth-child(1).krug{
+  background: #00baf2;
+}
+
+.kontent p{
+  margin-top: 150px;
+  font-size: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+footer{
+  height: 100%;
+  clear: both;
+  background-color: #e8edec;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+footer p{
+  text-align: center;
+  font-family: 'Code Pro Bold';
+  color: #00baf2;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+#fmal{
+  font-family: 'Poppins';
+  color: #000;
+  font-size: 13px;
+}
+
+footer .social{
+  display: flex;
+  justify-content: center;
+}
+
+
+footer .social span{
+  margin-right: 10px;
+  margin-bottom: 35px;
+}
+
+#rights{
+  display: flex;
+  justify-content: center; 
+  font-family: "Poppins";
+  font-size: 15px;
+  color: #000;
+}

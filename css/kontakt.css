@@ -1,0 +1,318 @@
+@font-face {
+  src: url('../fontovi/Code\ Pro\ Bold.otf');
+  font-family: 'Code Pro Bold';
+}
+@font-face {
+  src: url('../fontovi/Poppins-Regular.ttf');
+  font-family: 'Poppins';
+}
+@font-face {
+  src: url('../fontovi/Poppins-Bold.ttf');
+  font-family: 'Poppins Bold';
+}
+html{
+  overflow-y: scroll;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+  background-color: white;
+}
+.nav-box {
+  height: 200px;
+}
+nav{
+  padding: 25px;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  margin-bottom: 100px;
+  box-shadow: 0px 10px 10px 0 rgba(0,0,0,0.25);
+  position: fixed;
+}
+
+.omotac{
+  margin: 0 auto;
+  width: 1350px;
+}
+/*Navigaotri pocetak*/
+nav p{
+  float: left;
+  font-family: 'Code Pro Bold';
+  color: #00baf2;
+  font-size: 40px;
+  text-align: center;
+}
+
+.meni{
+  float: right;
+  margin-top: 10px;
+}
+nav ul{
+  list-style: none;
+}
+
+.meniopc{
+  float: left;
+}
+
+.meniopc li{
+  float: left;
+  margin-right: 20px;
+  font-family: 'Poppins';
+}
+
+.meniopc li button:hover{
+  background-position: 500% 100%;
+}
+
+.meniopc li a{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: normal;
+  color: black;
+  transition: 0.4s;
+}
+
+.meniopc li a:hover{
+  color: #00baf2;
+  transition: 0.4s;
+}
+
+.meniopc li a:last-child{
+  margin-right: 25px;
+}
+/*Navigaotri kraj*/
+
+
+/*Socijalni mediji pocetak*/
+.social{
+  display: inline-flex;
+  margin-top: -6px;
+}
+.social .icon{
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.social .icon span{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.6s;
+}
+
+a{
+  color: inherit;
+}
+
+.social .icon span i{
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.social .icon:hover span{
+  color: #fff;
+  transition: 0.6s;
+}
+.social .facebook:hover span{
+  background: #3B5999;
+  transition: 0.6s;
+}
+.social .instagram:hover span{
+  background: #e1306c;
+  transition: 0.6s;
+}
+.social .youtube:hover span{
+  background: red;
+  transition: 0.6s;
+}
+/*Socijalni mediji kraj*/
+.main{
+  height: 436px;
+}
+
+form{
+  width: 50%;
+  font-family: 'Poppins';
+  box-sizing: border-box;
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 100px;
+}
+
+.form-box h3{
+  font-family: 'Poppins Bold';
+  color: #00baf2;
+  margin-bottom: 35px;
+  font-size: 25px;
+}
+  
+.row{
+  display: block;
+  margin-bottom: 130px;
+}
+
+form label{
+  font-size: 20px;
+  font-weight: bold; 
+}
+
+form .ime{
+  float: left;
+  width: 50%;
+  padding: 0 6.5px 0 0;
+} 
+
+.form-control{
+  border-radius: 0;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  background: none;
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+form .email{
+  float: right;
+  width: 50%;
+  padding: 0 0 0 6.5px;
+}
+
+.row2{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.row2 .form-grupa{
+  margin-bottom: 20px;
+}
+
+.row2 #button{
+  color: #00baf2;
+  font-family: 'Poppins';
+  font-size: 15px;
+  margin-top: 25px;
+  flex: 1;
+  padding: 5px 60px;
+  border-radius: 999px;
+  border: 3px solid #00baf2;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+  background-image: url('../slike/ostale-slike/wave2.png');
+  background-repeat: repeat-x;
+  background-position: 0 -234%;
+  transition: 2s;
+}
+
+.row2 #button:hover{
+  background-position: 700% 100%;
+  color: #fff;
+}
+
+.desno{
+  float: left;
+  margin-top: 72px;
+  font-family: 'Poppins';
+}
+
+.kontakt h3{
+  font-size: 20px; 
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.kontakt p{
+  margin-bottom: 10px;
+}
+
+.kontakt p i{
+  margin-right: 5px;
+  color: #00baf2;
+}
+
+.adresa h3{
+  font-size: 20px; 
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.adresa p{
+  margin-bottom: 3px;
+}
+
+.adresa p i{
+  margin-right: 5px;
+  color: #00baf2;
+}
+
+footer{
+  height: 330px;
+  clear: both;
+  background-color: #e8edec;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+footer p{
+  text-align: center;
+  font-family: 'Code Pro Bold';
+  color: #00baf2;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+#fmal{
+  font-family: 'Poppins';
+  color: #000;
+  font-size: 13px;
+}
+
+footer .social{
+  display: flex;
+  justify-content: center;
+}
+
+
+footer .social span{
+  margin-right: 10px;
+  margin-bottom: 35px;
+}
+
+#rights{
+  display: flex;
+  justify-content: center; 
+  font-family: "Poppins";
+  font-size: 15px;
+  color: #000;
+}
+
+@media(max-width: 1280px){
+  
+}
+
+@media(max-width: 768px){
+  
+}
+
+@media(max-width: 375px){
+  
+}
