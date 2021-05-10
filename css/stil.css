@@ -10,21 +10,21 @@
   src: url('../fontovi/Poppins-Bold.ttf');
   font-family: 'Poppins Bold';
 }
+
+* {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html{
   overflow-y: scroll;
 }
 
-* {
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
 body{
   background-color: hsl(0, 0%, 100%);
 }
-
 
 /* Navigacija --------------- */
 nav{
@@ -139,57 +139,20 @@ a{
 
 
 /* Slajder --------------- */
-.slider {
-  margin-top: 100px;
-  /* overflow: hidden; */
-}
 
-.slide {
-  top: 0;
-  left: 0;
-  width: 100%;
+.glide-container {
   height: calc(100vh - 100px);
-  visibility: hidden;
-  transition: visibility 1s ease-in-out;
+  margin-top: 100px;
+  background-color: #333;
 }
 
-.slide.current {
-  visibility: visible;
+.glide__slides {
+  height: calc(100vh - 100px);
 }
 
-.slide .content {
-  /* bottom: 70px;
-  left: -600px; */
-  visibility: visible;
-  width: 600px;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #333;
-  /* padding: 35px; */
-}
-
-.slide .content h1 {
-  margin-bottom: 10px;
-}
-
-.slide.current .content {
-  visibility: visible;
-  transform: translateX(600px);
-  transition: all 0.7s ease-in-out 0.3s;
-}
-
-.buttons button#next {
+.glide__arrow {
   position: absolute;
   top: 50%;
-  right: 15px;
-}
-
-.buttons button#prev {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-}
-
-.buttons button {
   border: 2px solid #fff;
   background-color: transparent;
   color: hsl(0, 0%, 100%);
@@ -200,37 +163,43 @@ a{
   transition: 0.6s;
 }
 
-.buttons button:hover {
+.glide__arrow:hover {
   background-color: hsl(194, 100%, 47%);
   color: hsl(0, 0%, 100%);
   transition: 0.6s;
 }
 
-.slide.current .content {
-  visibility: visible;
-  /* transform: translateY(-300px); */
+.glide__arrow--left {
+  left: 15px;
 }
 
-.slide:first-child {
-  background: url(../slike/slajder-slike/1.png) no-repeat
-    center top/cover;
+.glide__arrow--right {
+  right: 15px;
 }
-.slide:nth-child(2) {
-  background: url(../slike/slajder-slike/2.png) no-repeat
-    center top/cover;
+
+.slika {
+  background-size: cover;
 }
-.slide:nth-child(3) {
-  background: url(../slike/slajder-slike/3.png) no-repeat
-    center top/cover;
+
+.slika1 {
+  background-image: url(/slike/slajder-slike/1.png);
 }
-.slide:nth-child(4) {
-  background: url(../slike/slajder-slike/4.png) no-repeat
-    center top/cover;
+
+.slika2 {
+  background-image: url(/slike/slajder-slike/2.png);
 }
-.slide:nth-child(5) {
-  background: url(../slike/slajder-slike/peta.png) no-repeat
-    center top/cover;
-} 
+
+.slika3 {
+  background-image: url(/slike/slajder-slike/3.png);
+}
+
+.slika4 {
+  background-image: url(/slike/slajder-slike/4.png);
+}
+
+.slika5 {
+  background-image: url(/slike/slajder-slike/5.png);
+}
 /* Slajder --------------- */
 
 /* Glavni sadrzaj --------------- */

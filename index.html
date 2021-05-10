@@ -1,15 +1,16 @@
   <!DOCTYPE html>
   <html lang="sr">
   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/stil.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-      <title>VodaVoda</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stil.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/css/glide.core.min.css">
+    <title>VodaVoda</title>
   </head>
   <body>
       <nav>
@@ -33,33 +34,23 @@
               </ul>
           </div>    
       </nav>
-      <div class="slider">
-        <div class="slide current">
-          <div class="content">
+      <div class="glide-container">
+        <div class="glide">
+          <div data-glide-el="track" class="glide__track">
+            <ul class="glide__slides">
+              <li class="glide__slide slika slika1"></li>
+              <li class="glide__slide slika slika2"></li>
+              <li class="glide__slide slika slika3"></li>
+              <li class="glide__slide slika slika4"></li>
+              <li class="glide__slide slika slika5"></li>
+            </ul>
           </div>
-        </div>
-        <div class="slide">
-          <div class="content">
-          </div>
-        </div>
-        <div class="slide">
-          <div class="content">
-          </div>
-        </div>
-        <div class="slide">
-          <div class="content">
-          </div>
-        </div>
-        <div class="slide">
-          <div class="content">
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
           </div>
         </div>
       </div>
-      <div class="buttons">
-        <button id="prev"><i class="fas fa-arrow-left"></i></button>
-        <button id="next"><i class="fas fa-arrow-right"></i></button>
-      </div>
-      <script src="js/main.js"></script>
       <div class="omotac">
         <section class="O-nama">
           <h1>O nama</h1>
@@ -139,6 +130,8 @@
               </ul>
               <p id="rights">© ALL RIGHTS RESERVED - VODAVODA</p>
         </div>
-    </footer>   
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/main.js"></script>
   </body>
   </html>
