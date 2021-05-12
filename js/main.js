@@ -3,3 +3,4 @@ const config = {
 };
 
 new Glide('.glide', config).mount();
+//https://glidejs.com/

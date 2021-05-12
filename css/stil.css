@@ -11,15 +11,19 @@
   font-family: 'Poppins Bold';
 }
 
-* {
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
+html{
+  overflow-y: scroll;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
-html{
-  overflow-y: scroll;
+*,
+*::before,
+*::after {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 body{
@@ -43,7 +47,7 @@ nav{
   font-family: 'Code Pro Bold';
   text-decoration: none;
   color: hsl(194, 100%, 47%);
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -139,11 +143,11 @@ a{
 
 
 /* Slajder --------------- */
-
 .glide-container {
   height: calc(100vh - 100px);
   margin-top: 100px;
   background-color: #333;
+  margin-bottom: 40px;
 }
 
 .glide__slides {
@@ -203,79 +207,91 @@ a{
 /* Slajder --------------- */
 
 /* Glavni sadrzaj --------------- */
-.O-nama{
-  box-sizing: border-box;
-  margin-bottom: 100px;
+.omotac {
+  padding: 0 1.7em;
 }
 
-section h1{
-  font-size: 30px;
-  color: hsl(194, 100%, 47%);
-  text-align: center;
+.omotac-0 {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.omotac-1 {
+  background-color: hsl(160, 20%, 97%);
+}
+
+.omotac-2 {
+  background-color: hsl(168, 12%, 92%);
+}
+
+.o-nama{
+  line-height: 1.7;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Poppins';
+}
+
+.naslov {
   font-family: 'Code Pro Bold';
-  margin-bottom: 50px;
+  color: hsl(194, 100%, 47%);
+}
+
+.naslov-veliki {
+  /* margin-bottom: 1em; */
+  text-align: center;
+  font-size: 30px;
+}
+
+.naslov-mali {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.levo-o-nama,
+.desno-o-nama {
+  margin-bottom: 40px;
 }
 
 .levo-o-nama{
-  float: left;
-  text-align: left;
-  padding: 15px;
-  font-size: 18px;
-  font-family: 'Poppins';
-  width: 675px;
-  box-sizing: border-box;
-}
-
-.levo-o-nama h2{
-  font-family: 'Code Pro Bold';
-  color: hsl(194, 100%, 47%);
-}
-
-.levo-o-nama h2{
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.poreklo iframe{
-  margin-top: 20px;
+  margin-top: 1em;
 }
 
 .desno-o-nama{
-  float: right;
-  text-align: left;
-  font-size: 18px;
-  font-family: 'Poppins';
-  width: 675px;
-  margin-bottom: 130px;
-}
-
-.desno-o-nama h2{
-  font-family: 'Code Pro Bold';
-  color: hsl(194, 100%, 47%);
-  margin-bottom: 20px;
-  margin-top: 10px;
-  text-align: center;
+  
 }
 
 .desno-o-nama ul{
   margin: 15px 0 15px 18px;
 }
 
-.kartice{
-  background-color: hsl(160, 20%, 97%);
-  clear: both;
-  padding-top: 100px;   
-  
+.iframe-container {
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 60em;
+  padding-top: 56.25%;
 }
 
-.kartice .omotac h2{
-  text-align: center;
-  font-family: 'Code Pro Bold';
-  color: hsl(194, 100%, 47%);
-  margin-bottom: 70px;
+.iframe{
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Glavni sadrzaj --------------- */
+
+/* Kartice --------------- */
+.kartice{
+  clear: both;
+  padding-top: 20px;
 }
 
 .kartice p{
+  margin-top: 20px;
   text-align: center;
   font-size: 18px;
   font-family: 'Poppins';
@@ -296,7 +312,7 @@ section h1{
 .conteiner .kartica{
   position: relative;
   width: 300px;
-  height: 420px;
+  min-height: 420px;
   background: hsl(0, 0%, 100%);
   margin: 20px;
   border-radius: 20px;
@@ -348,13 +364,11 @@ section h1{
   display: flex;
   justify-content: center;
 }
-/* Glavni sadrzaj --------------- */
+/* Kartice --------------- */
 
 /* Footer */
 footer{
-  height: 100%;
   clear: both;
-  background-color: hsl(168, 12%, 92%);
   padding-top: 50px;
   padding-bottom: 15px;
 }
@@ -364,10 +378,10 @@ footer p{
   font-family: 'Code Pro Bold';
   color: hsl(194, 100%, 47%);
   font-size: 35px;
-  margin-bottom: 30px;
 }
 
 #fmal{
+  margin-bottom: 30px;
   font-family: 'Poppins';
   color: hsl(0, 0%, 0%);
   font-size: 13px;
@@ -385,6 +399,7 @@ footer .social span{
 }
 
 #rights{
+  margin-bottom: 30px;
   display: flex;
   justify-content: center; 
   font-family: "Poppins";
