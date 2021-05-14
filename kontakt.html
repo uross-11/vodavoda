@@ -5,39 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/kontakt.css">
+    <!-- css komponente -->
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/fontovi.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!-- css komponente -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>VodaVoda</title>
 </head>
 <body>
-    <div class="nav-box">
-    <nav>
-        <div class="omotac">
-            <a href="index.html"><p>VodaVoda</p></a>
-            <div class="meni">
-                <ul class="meniopc">
-                    <li><a href="index.html">Početna</a></li>
-                    <li><a href="produkti.html">Produkti</a></li>
-                    <li><a href="kontakt.html" style="color: #00baf2;;">Kontakt</a></li>
-                </ul>
-                <ul class="social">              
-                  <div class="icon facebook">
-                    <span><a href="https://www.facebook.com/vodavodaworldwide/" target="_blank"><i class="fab fa-facebook-f"></i></a></span>
-                  </div>
-                  <div class="icon instagram">     
-                      <span><a href="https://www.instagram.com/vodavoda_worldwide/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></span>
-                  </div>
-                  <div class="icon youtube"> 
-                      <span><a href="https://www.youtube.com/channel/UCKDWaU9K314HgwOVIxvGF-A" target="_blank"><i class="fab fa-youtube"></i></a></span>
-                  </div>
-                </ul>
-            </div> 
-        </div>  
+    <nav class="nav">
+        <a id="logo" href="index.html">VodaVoda</a>
+        <a id="btnHamburger" href="#" class="toggle hide-for-desktop">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </a>
+        <div class="overlay"></div>
+         <!-- <div class="meni hide-for-mobile">
+            <ul class="meniopc">
+                <li><a href="index.html" style="color: #00baf2;">Početna</a></li>
+                <li><a href="produkti.html">Produkti</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <ul class="social">              
+              <div class="icon facebook">
+                <span><a href="https://www.facebook.com/vodavodaworldwide/" target="_blank"><i class="fab fa-facebook-f"></i></a></span>
+              </div>
+              <div class="icon instagram">     
+                  <span><a href="https://www.instagram.com/vodavoda_worldwide/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></span>
+              </div>
+              <div class="icon youtube"> 
+                  <span><a href="https://www.youtube.com/channel/UCKDWaU9K314HgwOVIxvGF-A" target="_blank"><i class="fab fa-youtube"></i></a></span>
+              </div>
+            </ul>
+        </div>  -->
+        <div class="overlay-menu">
+          <ul class="list">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="produkti.html">Produkti</a></li>
+            <li><a href="kontakt.html" style="color: #00baf2; pointer-events: none;">Kontakt</a></li>
+          </ul>
+          <ul class="social">              
+            <div class="icon facebook">
+              <span><a href="https://www.facebook.com/vodavodaworldwide/" target="_blank"><i class="fab fa-facebook-f"></i></a></span>
+            </div>
+            <div class="icon instagram">     
+                <span><a href="https://www.instagram.com/vodavoda_worldwide/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></span>
+            </div>
+            <div class="icon youtube"> 
+                <span><a href="https://www.youtube.com/channel/UCKDWaU9K314HgwOVIxvGF-A" target="_blank"><i class="fab fa-youtube"></i></a></span>
+            </div>
+          </ul>
+        </div>
     </nav>
-</div>
     <div class="main">
-        <div class="omotac">
+    <div class="omotac omotac-0">
         <form class="form-box" method="POST">
-            <h3>POŠALJI PORUKU</h3>
+            <div>
+            <h3 class="kontakt-naslov">POŠALJI PORUKU</h3>
             <div class="row">
                 <div class="ime">
                     <label for="name">Ime</label>
@@ -55,42 +82,42 @@
             <div class="row2">
                 <label for="message">Poruka</label>
                 <div class="form-grupa">
-                    <textarea name="message" id="message" class="form-control form-value" required style="resize: vertical; max-height: 200px;"></textarea>                    
+                    <textarea name="message" id="message" class="form-control form-value" required style="resize: vertical; max-height: 200px; min-height: 32px;"></textarea>                    
                 </div>
                 <input id="button" type="submit" value="POŠALJI" style="font-weight: bold;">
             </div>
+        </div>
         </form>
-    <div class="desno">
-        <div class="kontakt">
-            <h3>Kontakt</h3>
-            <p><i class="far fa-envelope"></i>marketing@vodavoda.com</p>
-        </div>
-        <div class="adresa">
-            <h3>Naša adresa</h3>
-            <p><i class="fas fa-map-marker-alt"></i>Gornja Toplica BB</p>
-            <p><i class="fas fa-map-marker-alt"></i>Banja Vrujci, Srbija</p>
-        </div>
+    
+    </div> 
+    <div class="omotac omotac-2">
+        <footer>
+                <div class="kontakt">
+                    <h3>Kontakt</h3>
+                    <p><i class="far fa-envelope"></i>marketing@vodavoda.com</p>
+                </div>
+                <div class="adresa">
+                    <h3>Naša adresa</h3>
+                    <p><i class="fas fa-map-marker-alt"></i>Gornja Toplica BB</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Banja Vrujci, Srbija</p>
+                </div>
+          <p class="footer-logo">VODAVODA</p>
+          <p id="fmal">marketing@vodavoda.com</p>
+          <ul class="social">              
+            <div class="icon facebook">
+              <span><a href="https://www.facebook.com/vodavodaworldwide/" target="_blank"><i class="fab fa-facebook-f"></i></a></span>
+            </div>
+            <div class="icon instagram">     
+              <span><a href="https://www.instagram.com/vodavoda_worldwide/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></span>
+            </div>
+            <div class="icon youtube"> 
+              <span><a href="https://www.youtube.com/channel/UCKDWaU9K314HgwOVIxvGF-A" target="_blank"><i class="fab fa-youtube"></i></a></span>
+            </div>
+          </ul>
+          <p id="rights">© ALL RIGHTS RESERVED - VODAVODA</p>
+      </footer>
+      <script src="js/main.js"></script>
     </div>
-    </div> 
-    </div> 
-    <!--futer pocetak-->
-    <footer>
-        <div class="omotac">
-            <p>VODAVODA</p>
-            <p id="fmal">marketing@vodavoda.com</p>
-            <ul class="social">              
-                <div class="icon facebook">
-                  <span><a href="https://www.facebook.com/vodavodaworldwide/" target="_blank"><i class="fab fa-facebook-f"></i></a></span>
-                </div>
-                <div class="icon instagram">     
-                    <span><a href="https://www.instagram.com/vodavoda_worldwide/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></span>
-                </div>
-                <div class="icon youtube"> 
-                    <span><a href="https://www.youtube.com/channel/UCKDWaU9K314HgwOVIxvGF-A" target="_blank"><i class="fab fa-youtube"></i></a></span>
-                </div>
-              </ul>
-              <p id="rights">© ALL RIGHTS RESERVED - VODAVODA</p>
-        </div>
-    </footer>   
+</div>
 </body>
 </html>

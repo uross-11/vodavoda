@@ -1,10 +1,3 @@
-const config = {
-  type: 'carousel',
-};
-
-new Glide('.glide', config).mount();
-//https://glidejs.com/
-
 const hamburger = document.querySelector('#btnHamburger');
 const header = document.querySelector('.nav');
 const overlay = document.querySelector('.overlay');

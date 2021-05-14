@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stil.css">
+    <!-- css komponente -->
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/fontovi.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/glider.css">
+    <link rel="stylesheet" href="/css/pocetna-sadrzaj.css">
+    <link rel="stylesheet" href="/css/pocetna-kartice.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!-- css komponente -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"/>
@@ -139,7 +147,7 @@
             </div>
         </div>
       </div>
-      <div class="omotac omotac-2">
+  <div class="omotac omotac-2">
       <footer>
         <p class="footer-logo">VODAVODA</p>
         <p id="fmal">marketing@vodavoda.com</p>
@@ -158,6 +166,14 @@
     </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+    const config = {
+      type: 'carousel',
+    };
+
+    new Glide('.glide', config).mount();
+    //https://glidejs.com/
+  </script>
   <script src="js/main.js"></script>
   </body>
   </html>
