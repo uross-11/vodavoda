@@ -32,7 +32,7 @@ h3 {
 .kontakt-naslov {
   font-family: 'Poppins Bold';
   font-size: 25px;
-  color: #00baf2;
+  color: hsl(194, 100%, 47%);
   /* margin-bottom: 35px; */
 }
 
@@ -42,7 +42,7 @@ h3 {
 
 .adresa p i {
   margin-right: 5px;
-  color: #00baf2;
+  color: hsl(194, 100%, 47%);
 }
 
 form label{
@@ -73,44 +73,22 @@ form label{
   flex: 1;
   padding: 5px 60px;
   border-radius: 999px;
-  border: 3px solid #00baf2;
+  border: 3px solid hsl(194, 100%, 47%);
   white-space: nowrap;
   cursor: pointer;
   user-select: none;
   background: transparent;
   background-image: url('../slike/ostale-slike/wave2.png');
   background-repeat: repeat-x;
-  background-position: 0 -234%;
+  background-position: 0 -100%;
   transition: all 700ms ease-in-out;
 }
 
 .row2 #button:hover{
   background-position: 700% 100%;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 
-/* form .ime{
-  padding: 0 6.5px 0 0;
-}  */
-
-/* form .email{
-  padding: 0 0 0 6.5px;
+/* @media(max-width: 1280px){
+  
 } */
-
-/* 
-
-
-
-
-
-@media(max-width: 1280px){
-  
-}
-
-@media(max-width: 768px){
-  
-}
-
-@media(max-width: 375px){
-  
-}
