@@ -10,11 +10,27 @@
 }
 
 .form-box {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 100%;
-  padding-bottom: 7em;
+  padding-bottom: 7rem;
   margin-top: calc(75px + 1em);
+}
+
+.kontakt-box {
+  padding-top: 4rem;
+}
+
+@media (min-width: 769px) {
+  .form-box {
+    flex-direction: row;
+  }
+
+  .kontakt-box {
+    padding: 4rem;
+  }
 }
 
 h3 {
@@ -40,7 +56,7 @@ h3 {
   margin-bottom: 3px;
 }
 
-.adresa p i {
+.kontakt-box i {
   margin-right: 5px;
   color: hsl(194, 100%, 47%);
 }
@@ -89,6 +105,12 @@ form label{
   color: hsl(0, 0%, 100%);
 }
 
-/* @media(max-width: 1280px){
+@media (min-width: 1281px) {
+  .row {
+    display: flex;
+  }
   
-} */
+  .ime {
+    margin-right: 10px;
+  }
+}
