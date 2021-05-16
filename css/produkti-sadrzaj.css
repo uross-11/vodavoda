@@ -1,0 +1,95 @@
+main{
+  margin-top: 75px;
+  font-family: 'Poppins';
+  font-size: 18px;
+}
+
+.container {
+  padding: 0 1.7em;
+  padding-top: 2em;
+}
+
+.slika {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-img {
+  display: grid;
+  place-items: center;
+}
+
+.tekst {
+  line-height: 1.7;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Poppins';
+  margin-bottom: 20px;
+}
+
+.sekcija {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 769px) {
+  .sekcija {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1281px) {
+  .tekst {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 769px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .content,
+  .content-img {
+    padding: 3rem;
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .sekcija-2 {
+    flex-direction: row-reverse;
+  }
+
+  .sekcija-4 {
+    flex-direction: row-reverse;
+  }
+}
+
+.slajder {
+  width: 100%;
+  height: 20vh;
+  background-image: url(/slike/flasice-slike/flasice\ anim2.png);
+  background-size: cover;
+}
+
+@media (min-width: 769px) {
+  .slajder{
+    width: 100%;
+    height: 100%;
+    animation: slajd 12s infinite linear;
+  }
+  
+  .slajder:hover{
+    animation-play-state: paused;
+  }
+  
+  @keyframes slajd{
+    0%{background-position: 0 0;}
+    100%{background-position: -2022px 0;}
+  }
+}

@@ -1,0 +1,66 @@
+/* Slajder --------------- */
+.glide-container {
+  height: calc(100vh - 75px);
+  margin-top: 75px;
+  background-color: #333;
+  margin-bottom: 40px;
+}
+
+.glide__slides {
+  height: calc(100vh - 75px);
+}
+
+.glide__arrow {
+  position: absolute;
+  top: 50%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.open .glide__arrow {
+  visibility: hidden;
+}
+
+.glide__arrow:hover {
+  background-color: hsl(194, 100%, 47%);
+  color: hsl(0, 0%, 100%);
+  transition: 0.6s;
+}
+
+.glide__arrow--left {
+  left: 15px;
+}
+
+.glide__arrow--right {
+  right: 15px;
+}
+
+.slika {
+  background-size: cover;
+}
+
+.slika1 {
+  background-image: url(/slike/slajder-slike/1.png);
+}
+
+.slika2 {
+  background-image: url(/slike/slajder-slike/2.png);
+}
+
+.slika3 {
+  background-image: url(/slike/slajder-slike/3.png);
+}
+
+.slika4 {
+  background-image: url(/slike/slajder-slike/4.png);
+}
+
+.slika5 {
+  background-image: url(/slike/slajder-slike/5.png);
+}
+/* Slajder --------------- */

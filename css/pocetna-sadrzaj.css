@@ -1,0 +1,78 @@
+/* Glavni sadrzaj --------------- */
+.o-nama{
+  line-height: 1.7;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Poppins';
+  }
+
+@media (min-width: 769px) {
+  .o-nama {
+    display: flex;
+    
+  }
+}
+
+@media (min-width: 1281px) {
+  .o-nama {
+    font-size: 20px;
+  }
+}
+
+  .levo-o-nama,
+  .desno-o-nama {
+  margin-bottom: 40px;
+  }
+
+  .levo-o-nama{
+    margin-top: 1em;
+  }
+
+  @media (min-width: 769px) {
+
+    .desno-o-nama {
+      padding: 1rem;
+    }
+
+    .levo-o-nama {
+      padding: 1rem;
+    }
+  }
+
+  @media (min-width: 1281px) {
+
+    .levo-o-nama,
+    .desno-o-nama {
+      padding: 0 4rem;
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .desno-o-nama ul{
+  margin: 15px 0 15px 18px;
+  }
+
+  .iframe-container {
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  }
+
+
+  .iframe{
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  min-height: 300px;
+  max-height: 30vh;
+  }
+/* Glavni sadrzaj --------------- */

@@ -1,0 +1,74 @@
+html{
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body{
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.open {
+  overflow: hidden;
+}
+
+.omotac {
+  padding: 0 1.7em;
+}
+
+.omotac-0 {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.omotac-1 {
+  background-color: hsl(160, 20%, 97%);
+}
+
+.omotac-2 {
+  background-color: hsl(168, 12%, 92%);
+}
+
+.naslov {
+  font-family: 'Code Pro Bold';
+  color: hsl(194, 100%, 47%);
+}
+
+.naslov-veliki {
+  text-align: center;
+  font-size: 30px;
+}
+
+.naslov-mali {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 769px) {
+  .naslov-mali {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1281px) {
+
+  .naslov-veliki {
+    font-size: 34px;
+  }
+
+  .naslov-mali {
+    font-size: 26px;
+  }
+}
+

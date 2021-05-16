@@ -1,0 +1,93 @@
+/* Kartice --------------- */
+.kartice{
+  clear: both;
+  padding-top: 20px;
+}
+
+@media (min-width: 1281px) {
+.kartice {
+  padding-bottom: 2rem;
+}
+
+.kartice .naslov {
+  padding-top: 1rem;
+}
+}
+
+
+
+.kartice p{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Poppins';
+}
+
+.conteiner{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.conteiner h3{
+  font-family: 'Poppins';
+}
+
+.conteiner .kartica{
+  position: relative;
+  width: 300px;
+  min-height: 420px;
+  background: hsl(0, 0%, 100%);
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px hsla(0, 0%, 0%, 0.2);
+  transition: 0.5s;
+}
+
+.conteiner .kartica:hover{
+  background-color: hsl(194, 100%, 47%);
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+}
+
+.conteiner .kartica .krug{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: hsl(194, 100%, 47%);
+  clip-path: circle(150px at center 0);
+  text-align: center;
+}
+
+.conteiner .kartica .krug h3{
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  padding: 40px 0;
+}
+
+.conteiner .kartica .content{
+  position:absolute;
+  bottom: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.conteiner .kartica .content p{
+  color: hsl(0, 0%, 40%);
+}
+
+.conteiner .kartica:nth-child(1).krug{
+  background: hsl(194, 100%, 47%);
+}
+
+.kontent p{
+  margin-top: 150px;
+  font-size: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+/* Kartice --------------- */
