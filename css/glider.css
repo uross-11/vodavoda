@@ -20,6 +20,7 @@
   padding: 13px 15px;
   border-radius: 50%;
   outline: none;
+  transition: all 0.6s ease-in-out;
 }
 
 .open .glide__arrow {
@@ -28,8 +29,6 @@
 
 .glide__arrow:hover {
   background-color: hsl(194, 100%, 47%);
-  color: hsl(0, 0%, 100%);
-  transition: 0.6s;
 }
 
 .glide__arrow--left {
