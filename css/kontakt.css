@@ -19,6 +19,21 @@
   margin-top: calc(75px + 1em);
 }
 
+.form-omotac {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1441px) {
+  .form-omotac {
+    justify-content: flex-start;
+    margin-left: calc(250px + 2rem);
+  }
+}
+
 .kontakt-box {
   padding-top: 4rem;
 }
@@ -111,5 +126,21 @@ form label{
   
   .ime {
     margin-right: 10px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .row2 {
+    width: 36.5vw;
+  }
+
+  .ime,
+  .email {
+    width: 18vw;
+    padding: 2rem 0;
+  }
+
+  #button {
+    padding-top: 2rem;
   }
 }

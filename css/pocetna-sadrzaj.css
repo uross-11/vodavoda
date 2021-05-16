@@ -15,7 +15,7 @@
 
 @media (min-width: 1281px) {
   .o-nama {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -41,12 +41,21 @@
 
   @media (min-width: 1281px) {
 
+    .omotac-0 {
+      padding: 0 250px;
+    }
+
     .levo-o-nama,
     .desno-o-nama {
-      padding: 0 4rem;
+      padding: 2rem;
       padding-top: 1rem;
       margin-bottom: 1rem;
     }
+  }
+
+  @media (min-width: 1441px) {
+    .levo-o-nama { padding-right: 3rem; }
+    .desno-o-nama { padding-left: 3rem; }
   }
 
   .desno-o-nama ul{

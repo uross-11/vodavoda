@@ -62,43 +62,45 @@
   </nav>
     <div class="main">
       <div class="omotac omotac-0">
-        <form class="form-box" method="POST">
-          <div>
-            <h3 class="kontakt-naslov">POŠALJI PORUKU</h3>
-            <div class="row">
-              <div class="ime">
-                <label for="name">Ime</label>
-                <div class="form-grupa">
-                  <input id="name" name="name" class="form-control form-value" required autofocus>                       
+        <div class="form-omotac">
+          <form class="form-box" method="POST">
+            <div>
+              <h3 class="kontakt-naslov">POŠALJI PORUKU</h3>
+              <div class="row">
+                <div class="ime">
+                  <label for="name">Ime</label>
+                  <div class="form-grupa">
+                    <input id="name" name="name" class="form-control form-value" required autofocus>                       
+                  </div>
+                </div>
+                <div class="email"> 
+                  <label for="email">E-mail</label>
+                  <div class="form-grupa">
+                    <input type="email" id="email" name="email" class="form-control form-value" required>                       
+                  </div>
                 </div>
               </div>
-              <div class="email"> 
-                <label for="email">E-mail</label>
+              <div class="row2">
+                <label for="message">Poruka</label>
                 <div class="form-grupa">
-                  <input type="email" id="email" name="email" class="form-control form-value" required>                       
+                  <textarea name="message" id="message" class="form-control form-value" required style="resize: vertical; max-height: 200px; min-height: 32px;"></textarea>                    
                 </div>
+                <input id="button" type="submit" value="POŠALJI" style="font-weight: bold;">
               </div>
             </div>
-            <div class="row2">
-              <label for="message">Poruka</label>
-              <div class="form-grupa">
-                <textarea name="message" id="message" class="form-control form-value" required style="resize: vertical; max-height: 200px; min-height: 32px;"></textarea>                    
+            <div class="kontakt-box">
+              <div class="kontakt">
+                <h3>Kontakt</h3>
+                <p><i class="far fa-envelope"></i>marketing@vodavoda.com</p>
               </div>
-              <input id="button" type="submit" value="POŠALJI" style="font-weight: bold;">
+              <div class="adresa">
+                <h3>Naša adresa</h3>
+                <p><i class="fas fa-map-marker-alt"></i>Gornja Toplica BB</p>
+                <p><i class="fas fa-map-marker-alt"></i>Banja Vrujci, Srbija</p>
+              </div>
             </div>
-          </div>
-          <div class="kontakt-box">
-            <div class="kontakt">
-              <h3>Kontakt</h3>
-              <p><i class="far fa-envelope"></i>marketing@vodavoda.com</p>
-            </div>
-            <div class="adresa">
-              <h3>Naša adresa</h3>
-              <p><i class="fas fa-map-marker-alt"></i>Gornja Toplica BB</p>
-              <p><i class="fas fa-map-marker-alt"></i>Banja Vrujci, Srbija</p>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div> 
       <div class="omotac omotac-2">
         <footer>

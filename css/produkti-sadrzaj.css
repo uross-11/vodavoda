@@ -9,9 +9,16 @@ main{
   padding-top: 2em;
 }
 
+@media (min-width: 1441px) {
+  .container {
+    padding: 0 calc(250px + 2rem);
+  }
+}
+
 .slika {
   max-width: 100%;
   height: auto;
+  filter: drop-shadow(0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
 .content-img {
